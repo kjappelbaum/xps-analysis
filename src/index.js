@@ -9,3 +9,5 @@ export {
 } from 'common-spectrum';
 
 export { fromVamas } from './from/fromVamas';
+
+export { references } from './references';
