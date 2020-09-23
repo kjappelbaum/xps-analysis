@@ -33,6 +33,12 @@ export function fromVamas(text) {
       }
     }
 
+    for (let key in header) {
+      if (typeof header[key] === 'string' || typeof header[key] === 'number') {
+        meta[key] = header[key];
+      }
+    }
+
     const variables = {};
     if (xLabel === 'Kinetic energy' && sourceEnergy) {
       // we will calculate bonding energy
@@ -70,7 +76,7 @@ export function fromVamas(text) {
     analysis.pushSpectrum(variables, {
       dataType: 'XPS',
       title,
-      meta: { ...header, ...meta },
+      meta,
     });
   }
 
