@@ -2,6 +2,10 @@ import { parse } from 'vamas';
 
 import { Analysis } from '..';
 
+/**
+ * Returns an Analysis from a VAMAS text file
+ * @param {string} [text] the vamas text file
+ */
 export function fromVamas(text) {
   let parsed = parse(text);
   let header = parsed.header;

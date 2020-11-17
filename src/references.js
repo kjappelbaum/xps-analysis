@@ -1,3 +1,6 @@
+/**
+ * Array of object containing element, orbital and be
+ */
 export const references = [
   { element: 'H', orbital: '1s', be: 14 },
   { element: 'He', orbital: '1s', be: 25 },
