@@ -56,6 +56,7 @@
     "common-spectrum": "0.15.0",
     "convert-to-jcamp": "^4.2.0",
     "jcampconverter": "^7.6.5",
+    "ml-gsd": "^6.1.1",
     "vamas": "^0.0.3"
   }
 }
