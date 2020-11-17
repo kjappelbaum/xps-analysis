@@ -10,8 +10,8 @@ describe('fromVamas', () => {
   );
 
   it('multiplex', () => {
-    let result = fromVamas(text);
-
-    console.log(result.spectra[0]);
+    let result = fromVamas(text).spectra[0];
+    expect(Object.keys(result.variables)).toHaveLength(3);
+    expect(Object.keys(result.meta)).toHaveLength(61);
   });
 });
