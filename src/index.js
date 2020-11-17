@@ -10,4 +10,6 @@ export {
 
 export { fromVamas } from './from/fromVamas';
 
+export { peakPicking } from './peakPicking';
+
 export { references } from './references';
