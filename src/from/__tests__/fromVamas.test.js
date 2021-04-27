@@ -12,6 +12,7 @@ describe('fromVamas', () => {
   it('multiplex', () => {
     let result = fromVamas(text).spectra[0];
     expect(Object.keys(result.variables)).toHaveLength(3);
-    expect(Object.keys(result.meta)).toHaveLength(61);
+    expect(Object.keys(result.meta)).toHaveLength(62);
+    expect(typeof result.meta.cheminfo.meta).toBe('object');
   });
 });
