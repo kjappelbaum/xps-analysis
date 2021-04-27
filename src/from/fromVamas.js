@@ -2,6 +2,8 @@ import { parse } from 'vamas';
 
 import { Analysis } from '..';
 
+import { getNormalizedMeta } from './getNormalizedMeta';
+
 /**
  * Returns an Analysis from a VAMAS text file
  * @param {string} [text] the vamas text file
@@ -42,6 +44,8 @@ export function fromVamas(text) {
         meta[key] = header[key];
       }
     }
+
+    meta.cheminfo = { meta: getNormalizedMeta(meta) };
 
     const variables = {};
     if (xLabel === 'Kinetic energy' && sourceEnergy) {
