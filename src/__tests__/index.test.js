@@ -26,5 +26,10 @@ describe('fromVamas', () => {
     expect(jcamp.indexOf('CASA')).toBeGreaterThan(30000);
     expect(jcamp.length).toBeGreaterThan(579000);
     expect(jcamp.length).toBeLessThan(600000);
+
+    let cheminfo = jcamp
+      .split(/\r?\n/)
+      .filter((line) => line.includes('##$cheminfo='));
+    expect(cheminfo).toHaveLength(54);
   });
 });
