@@ -2,7 +2,6 @@ import { readFileSync } from 'fs';
 import { join } from 'path';
 
 import { fromVamas } from '..';
-
 import { peakPicking } from '../peakPicking';
 
 describe('peakPicking', () => {
