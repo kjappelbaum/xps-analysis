@@ -18,26 +18,26 @@ describe('XPS region parser', () => {
   it('Auger', () => {
     let region = parseRegion('Cu LMM');
     expect(region.orbital).toStrictEqual({
-        element: null,
-        shell: null,
-        angularMomentum: null,
-      });
-      expect(region.auger).toStrictEqual({
-        element: 'Cu',
-        transition: 'LMM',
-      });
+      element: null,
+      shell: null,
+      angularMomentum: null,
+    });
+    expect(region.auger).toStrictEqual({
+      element: 'Cu',
+      transition: 'LMM',
+    });
   });
 
   it('XPS detail', () => {
     let region = parseRegion('O 1s');
     expect(region.orbital).toStrictEqual({
-        element: 'O',
-        shell: 1,
-        angularMomentum: 's',
-      });
-      expect(region.auger).toStrictEqual({
-        element: null,
-        transition: null,
-      });
+      element: 'O',
+      shell: 1,
+      angularMomentum: 's',
+    });
+    expect(region.auger).toStrictEqual({
+      element: null,
+      transition: null,
+    });
   });
 });

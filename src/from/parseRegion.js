@@ -8,8 +8,8 @@ export function parseRegion(string) {
     orbital: { element: null, shell: null, angularMomentum: null },
     auger: { element: null, transition: null },
   };
-  let xpsMatches = XPS_REGEX.exec(string);
-  let augerMatches = AUGER_REGEX.exec(string);
+  let xpsMatches = string.match(XPS_REGEX);
+  let augerMatches = string.match(AUGER_REGEX);
   if (xpsMatches && xpsMatches.groups.shell) {
     result.orbital.element = xpsMatches.groups.element;
     result.orbital.shell = parseInt(xpsMatches.groups.shell, 10);
