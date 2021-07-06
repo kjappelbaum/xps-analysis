@@ -31,5 +31,6 @@ describe('fromVamas', () => {
       .split(/\r?\n/)
       .filter((line) => line.includes('##$cheminfo='));
     expect(cheminfo).toHaveLength(54);
+    expect(cheminfo[0]).toMatch('region');
   });
 });

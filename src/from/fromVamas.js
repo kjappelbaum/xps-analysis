@@ -25,7 +25,6 @@ export function fromVamas(text) {
     let xUnits = block['abscissa units'];
     let xStart = block['abscissa start'];
     let xIncrement = block['abscissa increment'];
-
     let xValues = new Float64Array(yValues.length);
     for (let i = 0; i < yValues.length; i++) {
       xValues[i] = xStart + xIncrement * i;

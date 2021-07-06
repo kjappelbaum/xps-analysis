@@ -1,5 +1,8 @@
+import { parseRegion } from './parseRegion.js';
+
 export function getNormalizedMeta(meta = {}) {
   const normalized = {};
+  normalized.region = parseRegion(meta['block identifier']);
   const energyType = {};
   energyType.kind = meta['abscissa label']
     .replace('energy', '')
