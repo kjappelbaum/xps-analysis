@@ -54,6 +54,7 @@
   },
   "dependencies": {
     "common-spectrum": "0.39.0",
+    "ensure-string": "^0.1.1",
     "ml-gsd": "^6.6.3",
     "vamas": "^0.0.3"
   },

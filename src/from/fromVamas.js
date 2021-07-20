@@ -1,14 +1,15 @@
 import { parse } from 'vamas';
 
 import { Analysis } from '..';
-
+import { ensureString } from 'ensure-string';
 import { getNormalizedMeta } from './getNormalizedMeta';
 
 /**
  * Returns an Analysis from a VAMAS text file
- * @param {string} [text] the vamas text file
+ * @param {arrayBuffer|string} [text] the vamas text file
  */
 export function fromVamas(text) {
+  text = ensureString(text);
   let parsed = parse(text);
   let header = parsed.header;
   let blocks = parsed.blocks;
