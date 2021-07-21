@@ -25,7 +25,7 @@ describe('fromVamas', () => {
     let jcamp = toJcamp(result);
     expect(jcamp.indexOf('CASA')).toBeGreaterThan(30000);
     expect(jcamp.length).toBeGreaterThan(579000);
-    expect(jcamp.length).toBeLessThan(600000);
+    expect(jcamp.length).toBeLessThan(603367);
 
     let cheminfo = jcamp
       .split(/\r?\n/)

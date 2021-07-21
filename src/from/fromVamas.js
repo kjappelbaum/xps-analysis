@@ -1,7 +1,8 @@
+import { ensureString } from 'ensure-string';
 import { parse } from 'vamas';
 
 import { Analysis } from '..';
-import { ensureString } from 'ensure-string';
+
 import { getNormalizedMeta } from './getNormalizedMeta';
 
 /**

@@ -26,6 +26,14 @@ export function getNormalizedMeta(meta = {}) {
     units: 'um',
   };
   normalized.analysisSource = source;
+  normalized.speciesLabel = meta['species label'];
+
+  const increment = meta['abscissa increment'];
+  normalized.from = meta['abscissa start'];
+  normalized.to =
+    meta['abscissa start'] + increment * (meta.nbOrdinateValues - 1);
+
+  normalized.analyserMode = meta['analyser mode'];
 
   return normalized;
 }
