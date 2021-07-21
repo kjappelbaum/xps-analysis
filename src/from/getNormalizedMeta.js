@@ -8,22 +8,22 @@ export function getNormalizedMeta(meta = {}) {
     .replace('energy', '')
     .replace(/\s/g, '')
     .toLowerCase();
-  energyType.unit = meta['abscissa units'];
+  energyType.units = meta['abscissa units'];
   normalized.energyType = energyType;
 
   const source = {};
   source.label = meta['analysis source label'];
   source.characteristicEnergy = {
     value: meta['analysis source characteristic energy'],
-    unit: 'eV',
+    units: 'eV',
   };
   source.beamWidthX = {
     value: meta['analysis source beam width x'],
-    unit: 'um',
+    units: 'um',
   };
   source.beamWidthY = {
     value: meta['analysis source beam width y'],
-    unit: 'um',
+    units: 'um',
   };
   normalized.analysisSource = source;
 
