@@ -4,8 +4,7 @@ export {
   fromJcamp,
   toJcamp,
   toJcamps,
-  getJSGraph,
-  getNormalizationAnnotations,
+  JSGraph,
 } from 'common-spectrum';
 
 export { fromVamas } from './from/fromVamas';

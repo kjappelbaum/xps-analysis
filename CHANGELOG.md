@@ -1,5 +1,31 @@
 # Changelog
 
+## [0.5.0](https://www.github.com/cheminfo/xps-analysis/compare/v0.4.0...v0.5.0) (2021-07-20)
+
+
+### Features
+
+* convert to string if arrayBuffer ([cc445f7](https://www.github.com/cheminfo/xps-analysis/commit/cc445f72ec673a106d62fcbe56bdd07935029e36))
+
+## [0.4.0](https://www.github.com/cheminfo/xps-analysis/compare/v0.3.0...v0.4.0) (2021-07-20)
+
+
+### Features
+
+* update common-js ([afbbfe8](https://www.github.com/cheminfo/xps-analysis/commit/afbbfe8b1024f59f3bbca96a6a8672211658720d))
+
+
+### Bug Fixes
+
+* export JSGraph ([97e26f1](https://www.github.com/cheminfo/xps-analysis/commit/97e26f1b9a596c6e538dff61d8d924a19e9335f9))
+
+## [0.3.0](https://www.github.com/cheminfo/xps-analysis/compare/v0.2.0...v0.3.0) (2021-07-06)
+
+
+### Features
+
+* Add region in metadata ([#8](https://www.github.com/cheminfo/xps-analysis/issues/8)) ([b3546c8](https://www.github.com/cheminfo/xps-analysis/commit/b3546c8e048f8fa4e00510bd9732ed1433b52b71))
+
 ## [0.2.0](https://www.github.com/cheminfo/xps-analysis/compare/v0.1.0...v0.2.0) (2021-04-28)
 
 

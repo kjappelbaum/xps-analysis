@@ -7,11 +7,11 @@ test('appendCheminfoMeta', () => {
   expect(normalized.analysisSource.characteristicEnergy.value).toStrictEqual(
     1486.69,
   );
-  expect(normalized.analysisSource.characteristicEnergy.unit).toStrictEqual(
+  expect(normalized.analysisSource.characteristicEnergy.units).toStrictEqual(
     'eV',
   );
   expect(normalized.energyType.kind).toStrictEqual('kinetic');
   expect(normalized.analysisSource.beamWidthX.value).toStrictEqual(1e37);
   expect(normalized.analysisSource.beamWidthY.value).toStrictEqual(1e37);
-  expect(normalized.analysisSource.beamWidthX.unit).toStrictEqual('um');
+  expect(normalized.analysisSource.beamWidthX.units).toStrictEqual('um');
 });

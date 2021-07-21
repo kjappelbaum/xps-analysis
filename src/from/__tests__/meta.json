@@ -47,17 +47,17 @@
   "additionalNumericalParameters": [
     {
       "label": "ESCAPE DEPTH TYPE",
-      "unit": "d",
+      "units": "d",
       "value": "1"
     },
     {
       "label": "MFP Exponent",
-      "unit": "d",
+      "units": "d",
       "value": "0"
     },
     {
       "label": "PROPAGATION_CONVERGED",
-      "unit": "d",
+      "units": "d",
       "value": "1"
     }
   ],
