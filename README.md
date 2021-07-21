@@ -4,17 +4,11 @@
 [![build status][ci-image]][ci-url]
 [![npm download][download-image]][download-url]
 
-XPS analysis manipulation
+Parse, analyze, and convert XPS data.
 
 ## Installation
 
 `$ npm i xps-analysis`
-
-Allow to convert vamas file format
-
-https://www.wavemetrics.com/forum/general/vamas-file-format
-
-https://github.com/wojdyr/xylib/blob/master/xylib/vamas.cpp
 
 ## [API Documentation](https://cheminfo.github.io/xps-analysis/)
 
